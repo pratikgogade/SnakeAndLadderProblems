@@ -9,7 +9,7 @@ namespace SnakeAndLadderProblems
             while (Flag)
             {
                 Console.WriteLine("Welcome to Snake And Ladder Game");
-                Console.WriteLine("1.Start " + "\n" + "2.DiceRoll" + "\n" + "3.Exit");
+                Console.WriteLine("1.Start " + "\n" + "2.DiceRoll" + "\n" + "3.CheckOptions" + "\n" + "4.Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -21,7 +21,10 @@ namespace SnakeAndLadderProblems
                         DiceRoll diceRoll = new DiceRoll();
                         diceRoll.Diceroll();
                         break;
-
+                    case 3:
+                        CheckOptions checkOptions = new CheckOptions();
+                        checkOptions.Check();
+                        break;
                     default:
                         break;
                 }
